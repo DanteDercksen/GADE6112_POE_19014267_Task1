@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace GADE6112_POE_19014267
 {
-    class Obstacle : Tile
+    class EmptyTile : Tile
     {
-        public Obstacle(int x, int y) : base(x, y) { }
-
-
+        public EmptyTile(int x, int y) : base(x, y) { }
     }
 }

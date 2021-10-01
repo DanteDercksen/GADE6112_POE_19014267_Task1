@@ -8,7 +8,7 @@ namespace GADE6112_POE_19014267
 {
     abstract class Tile
     {
-        public enum TileType { Hero, Enemy, Goblin, Weapon};
+        public enum TileType { HERO, ENEMY, GOBLIN, WEAPON};
 
         protected int x;
         protected int y;
@@ -28,8 +28,5 @@ namespace GADE6112_POE_19014267
             x = X;
             y = Y;
         }
-
-
-
     }
 }
