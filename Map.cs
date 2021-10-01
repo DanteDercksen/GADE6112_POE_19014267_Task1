@@ -10,6 +10,8 @@ namespace GADE6112_POE_19014267
     {
         Tile[,] map;
 
+        EmptyTile emptyTile;
+
         Hero hero;
         Enemy[] enemies;
 
@@ -62,10 +64,13 @@ namespace GADE6112_POE_19014267
                 Create(enemy.type);
             }
 
-            UpdateVision();
+            foreach(Character c in map)
+            {
+                UpdateVision(c);
+            }
         }
 
-        public void UpdateVision()
+        public void UpdateVision(Character c)
         {
 
         }
@@ -83,8 +88,6 @@ namespace GADE6112_POE_19014267
             {
                 xPos = random.Next(minW, maxW + 1);
                 yPos = random.Next(minH, maxH + 1);
-
-                return null;
             }
 
             if (type == Tile.TileType.GOBLIN)
@@ -97,7 +100,7 @@ namespace GADE6112_POE_19014267
             }
             else
             {
-                return null;
+                return emptyTile;
             }
         }
 
