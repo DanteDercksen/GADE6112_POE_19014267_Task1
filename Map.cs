@@ -83,9 +83,9 @@ namespace GADE6112_POE_19014267
             {
                 xPos = random.Next(minW, maxW + 1);
                 yPos = random.Next(minH, maxH + 1);
-            }
 
-            
+                return null;
+            }
 
             if (type == Tile.TileType.GOBLIN)
             {
@@ -94,6 +94,10 @@ namespace GADE6112_POE_19014267
             else if (type == Tile.TileType.HERO)
             {
                 return h;
+            }
+            else
+            {
+                return null;
             }
         }
 
