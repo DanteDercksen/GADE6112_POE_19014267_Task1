@@ -115,5 +115,10 @@ namespace GADE6112_POE_19014267
                 frm1.mapText += 'Y';
             }
         }
+
+        public void RunGame()
+        {
+            
+        }
     }
 }
